@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Subhradipta Choudhury</title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+	
+<body>
+	<header>
+		<div class="navigation">
+			<div class="navbrand"><img src="images/logo.png" class="logo"></div>
+			<div class="navset">
+				<a href="#projects"><div class="navbtn">Projects</div></a>
+				<a href="#contact"><div class="navbtn">Say Hello</div></a>
+			</div>
+		</div>
+		<div class="main">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="profile-pic">
+							<center><img src="images/profile-img.jpg" class="pic"></center>
+						</div>
+					</div>
+					
+					<div class="col-md-6">
+						<div class="who-am-i">
+							<div class="greet">Hello!  I'm</div>
+							<div class="name">Subhradipta Choudhury</div>
+							<div class="profession">Web Developer | Coder</div>
+							<div class="about">A Web Developer & Machine Learning enthusiast. Currently pursuing B.Tech in Computer Science & Engineering from Netaji Subhash Engineering College. Besides, I have interests in Photography & Sketching.</div>
+							<div class="social-icons">
+								<a href="https://www.facebook.com/profile.php?id=100009449073945" class="icons"><div><i class="fa fa-facebook soc-icons"></i></div></a>
+								<a href="https://www.linkedin.com/in/subhradipta-choudhury-53017019a" class="icons"><div><i class="fa fa-linkedin soc-icons"></i></div></a>
+								<a href="https://github.com/cSubhradipta" class="icons"><div><i class="fa fa-github soc-icons"></i></div></a>
+								<a href="mailto:csubhradipta@gmail.com" class="icons"><div><i class="fa fa-envelope soc-icons"></i></div></a>
+								<a href="https://wa.me/917980397413" class="icons"><div><i class="fa fa-whatsapp soc-icons"></i></div></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <button class="to-top" onclick="backtotop()"><i class="fa fa-chevron-up"></i></button>
+		-->
+
+		<button onclick="topFunction()" id="myBtn"><i class="fa fa-chevron-up"></i></button>
+
+		<script>
+		var mybutton = document.getElementById("myBtn");
+
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		</script>
+
+
+		<div class="container">
+			<h1 class="page-section-name">Things I Do</h1>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="tech-skills">
+						<h3 class="heading">Coding</h3>
+						<hr class="rule">
+						<div class="part-normal">
+							<p>C/C&plus;&plus;</p>
+							<p>Python</p>	
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<div class="tech-skills">
+						<h3 class="heading">Web Development</h3>
+						<hr class="rule">
+						<div class="parts">
+							<p>HTML/CSS</p>
+							<p>Javascript</p>
+						</div>
+						<div class="parts">
+							<p>PHP</p>
+							<p>MySQL</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<div class="tech-skills">
+						<h3 class="heading">Hobbies</h3>
+						<hr class="rule">
+						<div class="part-normal">
+							<p>Photography</p>
+							<p>Sketching</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row" id="gap"></div>
+		</div>	
+	</header>	
+	<div class="projects" id="projects">
+		<div class="container">
+			<div class="page-section-name">Projects</div>
+			<div>
+				<div class="row">
+					<center>
+						<div class="col-md-6">
+							<a href="https://csubhradipta.github.io/Puppzilla/" target="_blank" style="text-decoration: none;">
+								<div class="project-items">
+									<img src="images/puppzilla.png" class="project-imgs">
+								</div>
+								<div class="project-title"><p><b>Puppzilla</b> - A PET Website</p></div>
+							</a>
+						</div>
+						
+							
+						<div class="col-md-6">
+							<a href="https://github.com/cSubhradipta/Port-Management-System" target="_blank" style="text-decoration: none;">
+								<div class="project-items">
+									<img src="images/pms4.png" class="project-imgs">
+								</div>
+								<div class="project-title"><p><b>Port Management System</b></p></div>
+							</a>
+						</div>
+					</center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="page-section-name">Say hello</div>
+			<div>
+				<div class="row">
+					<div class="col-md-3"></div>
+					<div class="col-md-6">
+						<div class="contact-form">
+							<form method="POST" action="https://formspree.io/meqrpwaz" autocomplete="off">
+								<input required="true" type="text" name="name" class="" placeholder="Name">
+								<input required="true" type="email" name="_replyto" class="" placeholder="E-mail">
+								<center><textarea name="message" rows="8" class="message" placeholder="Message"></textarea><br>
+								<input type="submit" name="submit" value="Send Message" class="submit-button"></center>
+							</form>
+						</div>
+					</div>				
+				</div>
+				<div class="row" id="gap"></div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		
+	</footer>
+</body>
+</html>
