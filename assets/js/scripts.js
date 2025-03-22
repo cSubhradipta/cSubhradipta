@@ -3,9 +3,10 @@ const navMenu = document.getElementsByClassName('navigation_menu');
 $(function () {
     $(document).scroll(function () {
         var $nav = $(".header");
-        $nav.toggleClass('scrolled', ($(this).scrollTop()) > ($nav.height()/2 + $("#about").offset().top));
+        $nav.toggleClass('scrolled', ($(this).scrollTop()) > ($nav.height()/2 + $("#experience").offset().top));
       });
 });
+
 
 const theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
@@ -63,21 +64,21 @@ function light(x, y){
 }
 
 
-$(function () {
-    $(document).scroll(function () {
-        var $nav = $(".header");
-        $nav.toggleClass('scrolled', ($(this).scrollTop()) > ($nav.height()/2 + $("#about").offset().top));
-      });
-});
+// $(function () {
+//     $(document).scroll(function () {
+//         var $nav = $(".header");
+//         $nav.toggleClass('scrolled', ($(this).scrollTop()) > ($nav.height()/2 + $("#about").offset().top));
+//       });
+// });
 
 $(document).ready(function(){
 
-    if($(this).scrollTop() < $("#about").offset().top){
+    if($(this).scrollTop() < $("#experience").offset().top){
         $(".navigation_bar").hide();
     }
   
     $(window).scroll(function () {
-        if (isScrolledAfterElement('#about')) {
+        if (isScrolledAfterElement('#experience')) {
             $('.navigation_bar').fadeIn();
         } else {
             $('.navigation_bar').fadeOut();
@@ -117,6 +118,27 @@ $(document).ready(function () {
         });
     });
 });
+
+function nextLine1(x){
+    let newline = document.getElementById(x);
+    newline.innerHTML = (window.innerWidth > 768)  ? `<br>` : ``;
+}
+function nextLine2(x){
+    let newline = document.getElementById(x);
+    newline.innerHTML = (window.innerWidth <= 768)  ? `<br>` : ``;
+}
+function charInLine(x){
+    let newline = document.getElementById(x);
+    newline.innerHTML = (window.innerWidth <= 768)  ? `<br>` : `-`;
+}
+function handleWindowChange() {
+    nextLine2('home-next-line');
+    nextLine1('about-next-line');
+    charInLine('char-in-line');
+}
+$(document).ready(handleWindowChange);
+$(window).on("resize", handleWindowChange);
+
 
 function onScroll(event){
     var scrollPos = $(document).scrollTop() + 1;
